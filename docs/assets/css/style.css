@@ -1,35 +1,49 @@
+:root {
+    --primary-color: #024e76;
+    --secondary-color: #39a6b2;
+    --tertiary-color: #39a6b2;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 body {
-    color: black;
+    color:var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
   }
 
+  /* HEADER / NAVBAR STYLES START */ 
+
   header {
     padding: 20px 35px;
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
     z-index: 9999;
   }
 
   header h1 {
-    font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--secondary-color);
+    text-align: right;
+    padding: 20px 35px;
+    position: relative;
+    width: 600px;
+
   }
 
-  header a {
+  header h1 a {
     text-decoration: none;
     color: var(--primary-color);
+    font-size: 50px;
   }
 
   header nav {
@@ -42,11 +56,37 @@ body {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    padding: 20px 10px;
+  }
+
+  header nav ul li {
+      padding: 0 15px;
   }
   
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-bottom: 5PX solid var(--secondary-color);
   }
+
+  header nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+  /* HEADER / NAVBAR STYLES END */
+
+  /* FOOTER STYLES START */
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
