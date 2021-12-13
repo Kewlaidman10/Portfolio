@@ -13,13 +13,14 @@
 body {
     color:var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
+    background-color: lightgrey;
   }
 
   /* HEADER / NAVBAR STYLES START */ 
 
   header {
     padding: 20px 35px;
-    background-color: var(--primary-color);
+    background-color: #292929;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -81,12 +82,32 @@ body {
 
   /* HEADER / NAVBAR STYLES END */
 
-  /* FOOTER STYLES START */
+  /* CONTACT STYLES START */
 .contact ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    padding: 50px;
   }
-  
+
+.contact ul li {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.contact li {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 10px 20px 50px 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+/* CONTACT STYLES END
