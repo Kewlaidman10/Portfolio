@@ -236,3 +236,47 @@ body {
 }
 
 /* PROJECTS STYLING END */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+ 
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+      width: 110%;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    .section-title {
+        width: 80%;
+        left: 10px;
+        text-align: left;
+      }
+    
+    .work {
+        flex: 0 70%;
+    }
+    .run-buddy img {
+        width: 50%;
+    }
+    .run-buddy-info {
+        height: 100px;
+        bottom: 0px;
+    }
+    
+}
