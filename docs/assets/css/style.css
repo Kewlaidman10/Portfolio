@@ -111,3 +111,20 @@ body {
     color: var(--primary-color);
 }
 /* CONTACT STYLES END
+
+/* HERO STYLING START */
+
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    background-position: 80%;
+    position: relative;
+}
+
+/* HERO STYLING END */
+
