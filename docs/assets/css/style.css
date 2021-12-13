@@ -5,9 +5,9 @@
   }
   
   * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
 body {
@@ -24,19 +24,18 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
     position: -webkit-sticky;
-    top: 0;
-    z-index: 9999;
+
   }
 
   header h1 {
     font-size: 36px;
     background-color: var(--secondary-color);
     text-align: right;
-    padding: 20px 35px;
+    padding: 20px;
     position: relative;
     width: 500px;
+    right: 35px;
 
   }
 
@@ -57,6 +56,7 @@ body {
     align-items: center;
     list-style: none;
     padding: 20px 10px;
+
   }
 
   header nav ul li {
@@ -82,30 +82,32 @@ body {
   /* HEADER / NAVBAR STYLES END */
 
   /* CONTACT STYLES START */
-.contact ul {
+.contact-info ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    padding: 50px;
+    padding: 30px 131px;
   }
 
-.contact ul li {
+.contact-info ul li {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     color: var(--primary-color);
     border-bottom: 5px solid var(--primary-color);
+    padding: 10px 20px;
+    font-size: 1.55vw;
 }
 
-.contact li {
+.contact-info li {
     text-decoration: none;
     color: var(--secondary-color);
     margin: 10px 20px 50px 0;
 }
 
-.contact a {
+.contact-info a {
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -125,14 +127,35 @@ body {
     position: relative;
 }
 
+.section-title h2 {
+    position:relative;
+    bottom: 30px;
+    right: 100px;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    padding: 20px 20px;
+
+}
+
 /* HERO STYLING END */
+
+
+
+/* ABOUT ME STYLING START */
+
+
+
+
+/* ABOUT ME STYLING END */
+
+
 
 /* SECTIONS STYLING START */
 
 .work, .contact, .intro {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .flex-row {
@@ -149,6 +172,7 @@ body {
     width: 75%;
     margin: 10px 0;
     padding: 20px 20px;
+    border-left: 5px solid var(--primary-color);
 }
 
 .info {
